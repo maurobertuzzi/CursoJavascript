@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&display=swap");
+
+:root {
+  --font: "Roboto Slab", serif;
+  --blue: #0d6efd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+#carritoImg {
+  width: 50px;
+  position: sticky;
+  left: 95%;
+  top: 10px;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 100vw;
+}
+
+.mainContainer * {
+  width: 25%;
+  padding: 8px;
+  margin: 4px 0;
+}
+
+.carritoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  position: sticky;
+  left: 58%;
+  top: 10px;
+  background-color: #88b3f2;
+  border-radius: 6px;
+}
+
+.carritoContainer #contenedorCarrito {
+  margin: 0 auto;
+  min-height: 100px;
+  width: 90%;
+  padding: 8px 4px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.carritoContainer .carritoContainerBotones button {
+  padding: 8px;
+  margin: 6px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+.carritoContainer .carritoContainerBotones button:first-child {
+  background-color: red;
+}
+.carritoContainer .carritoContainerBotones button:last-child {
+  background-color: green;
+}
+
+.itemCarrito {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.itemCarrito h3 {
+  font-size: 1.4rem;
+}
+
+.itemCarrito p {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  line-height: 2;
+}
+
+.botonEliminarProducto {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+#contenedorRubros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+#contenedorRubros button {
+  padding: 8px;
+  margin: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  border-radius: 8px;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  background-color: white;
+}
+
+#contenedorRubros button:hover {
+  color: white;
+  background-color: var(--blue);
+}
+
+.botonesOrdenar {
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  width: 90%;
+}
+
+.botonesOrdenar * {
+  padding: 6px;
+  margin: 0 4px;
+  font-size: 2rem;
+}
+
+#contenedorProductos {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.producto {
+  margin: 16px;
+  height: 400px;
+  width: 350px;
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3e3e3;
+  box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+}
+
+.producto h3 {
+  font-size: 2.6rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.producto p {
+  font-size: 2rem;
+  color: rgb(0, 6, 128);
+  font-weight: bold;
+}
+.producto img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btnCompra {
+  padding: 8px;
+  background-color: rgb(100, 100, 233);
+  border: 3px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+.btnCompra:hover {
+  background-color: rgb(74, 74, 170);
+  border: 3px solid rgb(100, 100, 233);
+}
+
+.isHidden {
+  display: none;
+}

@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CURSO</title>
-</head>
-<body>
-    <h1>Estos son nuestros productos para la clase de Body Pump</h1>
-    <h2>Consultanos para mas info sobre las clases y turnos</h2>
-    <script src="./main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eCommerce</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/34/34627.png"
+      alt="carrito"
+      id="carritoImg"
+    />
+    <section class="carritoContainer isHidden">
+      <div id="contenedorCarrito"></div>
+      <div class="carritoContainerBotones">
+        <button id="btnVaciarCarrito">Vaciar</button>
+        <button id="btnComprar">Finalizar Compra</button>
+      </div>
+    </section>
+    <section class="mainContainer">
+      <input id="buscador" placeholder="Qué estas buscando?" />
+      <input id="min" placeholder="Buscar por precio mínimo" />
+      <input id="max" placeholder="Buscar por precio máximo" />
+      <button id="btnBuscar">BUSCAR</button>
+    </section>
+    <div id="contenedorRubros">
+      <button class="botonRubro" id="todos">TODOS</button>
+    </div>
+    <div class="botonesOrdenar">
+      <button id="ordenarAsc"><i class="ri-arrow-up-fill"></i></button>
+      <button id="ordenarDesc"><i class="ri-arrow-down-fill"></i></button>
+    </div>
+    <div id="contenedorProductos"></div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
